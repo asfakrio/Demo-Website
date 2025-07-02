@@ -74,16 +74,16 @@ const ContactSection = () => {
               Have questions or ready to enroll? Reach out to us!
             </p>
             <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <MapPin className="w-6 h-6 text-primary" />
+              <div className="flex items-start gap-4">
+                <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <span>123 Education Lane, Knowledge City, 456789</span>
               </div>
-              <div className="flex items-center gap-4">
-                <Phone className="w-6 h-6 text-primary" />
+              <div className="flex items-start gap-4">
+                <Phone className="w-6 h-6 text-primary flex-shrink-0" />
                 <span>+1 (234) 567-890</span>
               </div>
-              <div className="flex items-center gap-4">
-                <Mail className="w-6 h-6 text-primary" />
+              <div className="flex items-start gap-4">
+                <Mail className="w-6 h-6 text-primary flex-shrink-0" />
                 <span>contact@brightfuture.academy</span>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Users, BookCheck, MessageSquareQuote, Award } from 'lucide-react';
+import { Users, BookCheck, MessageCircleQuestion, Award } from 'lucide-react';
 import { AnimatedSection } from './animated-section';
 
 const features = [
@@ -14,7 +14,7 @@ const features = [
     description: 'We offer a comprehensive and structured curriculum designed for conceptual clarity.',
   },
   {
-    icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
+    icon: <MessageCircleQuestion className="w-8 h-8 text-accent" />,
     title: 'Doubt-Clearing Sessions',
     description: 'Regular sessions dedicated to resolving student queries to ensure no one is left behind.',
   },
