@@ -8,7 +8,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline text-accent">
               About Bright Future Academy
             </h2>
             <p className="text-muted-foreground leading-relaxed">
