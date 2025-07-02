@@ -64,7 +64,7 @@ const ContactSection = () => {
   return (
     <AnimatedSection id="contact" className="bg-card">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12 bg-gradient-to-r from-gray-900 to-pink-400 bg-clip-text text-transparent">
+        <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12 text-foreground" style={{ textShadow: '0 0 10px hsl(var(--accent))' }}>
           Get in Touch
         </h2>
         <div className="grid md:grid-cols-2 gap-12">
