@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { GraduationCap, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -64,7 +64,9 @@ const Header = () => {
                   <div className="flex items-center justify-between p-4 border-b">
                      <Link href="#" className="flex items-center gap-2">
                         <GraduationCap className="h-8 w-8 text-primary" />
-                        <span className="text-xl font-bold font-headline">Bright Future</span>
+                        <SheetTitle asChild>
+                          <span className="text-xl font-bold font-headline">Bright Future</span>
+                        </SheetTitle>
                       </Link>
                       <SheetClose asChild>
                          <Button variant="ghost" size="icon"><X className="h-6 w-6" /></Button>
