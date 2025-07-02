@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Users, BookCheck, MessageCircleQuestion, Award } from 'lucide-react';
+import { Users, BookCheck, MessageSquareQuote, Award } from 'lucide-react';
 import { AnimatedSection } from './animated-section';
 
 const features = [
@@ -14,7 +14,7 @@ const features = [
     description: 'We offer a comprehensive and structured curriculum designed for conceptual clarity.',
   },
   {
-    icon: <MessageCircleQuestion className="w-8 h-8 text-accent" />,
+    icon: <MessageSquareQuote className="w-8 h-8 text-accent" />,
     title: 'Doubt-Clearing Sessions',
     description: 'Regular sessions dedicated to resolving student queries to ensure no one is left behind.',
   },
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
   return (
     <AnimatedSection id="why-us" className="bg-card">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold font-headline text-center text-primary mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold font-headline text-center text-accent mb-12">
           Why Choose Bright Future?
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
