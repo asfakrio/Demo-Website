@@ -8,9 +8,8 @@ const HeroSection = () => {
       <Image
         src="https://placehold.co/1920x1080.png"
         alt="A bright and modern classroom with students"
-        layout="fill"
-        objectFit="cover"
-        className="absolute inset-0 z-0"
+        fill
+        className="absolute inset-0 z-0 object-cover"
         priority
         data-ai-hint="classroom students"
       />

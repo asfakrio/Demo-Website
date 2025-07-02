@@ -22,10 +22,9 @@ const AboutSection = () => {
             <Image
               src="https://placehold.co/600x400.png"
               alt="Teacher explaining a concept to students"
-              layout="fill"
-              objectFit="cover"
+              fill
               data-ai-hint="teacher explaining"
-              className="transform hover:scale-105 transition-transform duration-500"
+              className="object-cover transform hover:scale-105 transition-transform duration-500"
             />
           </div>
         </div>

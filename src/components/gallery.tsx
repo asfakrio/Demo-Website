@@ -23,10 +23,9 @@ const Gallery = () => {
               <Image
                 src={image.src}
                 alt={image.alt}
-                layout="fill"
-                objectFit="cover"
+                fill
                 data-ai-hint={image.hint}
-                className="transform transition-transform duration-500 ease-in-out group-hover:scale-110"
+                className="object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
             </div>
