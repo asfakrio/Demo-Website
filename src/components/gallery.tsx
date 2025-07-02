@@ -2,11 +2,11 @@ import Image from 'next/image';
 import { AnimatedSection } from './animated-section';
 
 const galleryImages = [
-  { src: "https://placehold.co/600x400.png", alt: "Students working on a science project", hint: "science experiment" },
-  { src: "https://placehold.co/600x400.png", alt: "Teacher writing complex math formulas on a whiteboard", hint: "whiteboard equation" },
-  { src: "https://placehold.co/600x400.png", alt: "A student focused on studying in a library", hint: "student studying" },
-  { src: "https://placehold.co/600x400.png", alt: "A stack of educational books on a desk", hint: "library books" },
-  { src: "https://placehold.co/600x400.png", alt: "A collaborative group discussion in a classroom", hint: "classroom discussion" },
+  { src: "https://www.instituteofpracticalscience.com/images/Institute%20Class%20Tuition%20Center%20,%20Coaching%20Center%20,%20Coaching%20Classes%20in%20rohini%20Delhi.jpg", alt: "Classroom with students and teacher", hint: "classroom students" },
+  { src: "https://isbaindore.in/blog/wp-content/uploads/2021/07/asas.jpg", alt: "Students in a modern classroom setting", hint: "modern classroom" },
+  { src: "https://athrav.in/wp-content/uploads/2024/09/image.jpg", alt: "A female teacher mentoring a student", hint: "teacher mentoring" },
+  { src: "https://www.kidwise.in/wp-content/uploads/2023/01/iStock-1351416161.jpg", alt: "Happy students collaborating in class", hint: "students collaborating" },
+  { src: "https://www.dais.edu.in/img/slider/img9.jpg", alt: "School auditorium with students", hint: "school auditorium" },
   { src: "https://placehold.co/600x400.png", alt: "Close-up of a physics experiment setup", hint: "physics experiment" },
 ];
 
