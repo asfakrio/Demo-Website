@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { AnimatedSection } from './animated-section';
 
 const galleryImages = [
-  { src: "https://www.instituteofpracticalscience.com/images/Institute%20Class%20Tuition%20Center%20,%20Coaching%20Center%20,%20Coaching%20Classes%20in%20rohini%20Delhi.jpg", alt: "Classroom with students and teacher", hint: "classroom students" },
-  { src: "https://isbaindore.in/blog/wp-content/uploads/2021/07/asas.jpg", alt: "Students in a modern classroom setting", hint: "modern classroom" },
-  { src: "https://athrav.in/wp-content/uploads/2024/09/image.jpg", alt: "A female teacher mentoring a student", hint: "teacher mentoring" },
+  { src: "https://podarinternationalschool.com/wp-content/uploads/2019/11/Podar-International-School-top-image1-1024x507.jpg", alt: "Students in a library", hint: "students library" },
+  { src: "https://tse1.mm.bing.net/th/id/OIP.UWkJ0WGC502MQo_CCIUWuAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Students working on computers", hint: "students computers" },
+  { src: "https://tse3.mm.bing.net/th/id/OIP.Xe0lW3NO8DVyIFwIFlrdGQHaE8?w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Teacher helping student with work", hint: "teacher helping" },
   { src: "https://www.kidwise.in/wp-content/uploads/2023/01/iStock-1351416161.jpg", alt: "Happy students collaborating in class", hint: "students collaborating" },
   { src: "https://www.dais.edu.in/img/slider/img9.jpg", alt: "School auditorium with students", hint: "school auditorium" },
   { src: "https://placehold.co/600x400.png", alt: "Close-up of a physics experiment setup", hint: "physics experiment" },
