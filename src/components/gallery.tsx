@@ -5,7 +5,7 @@ const galleryImages = [
   { src: "https://podarinternationalschool.com/wp-content/uploads/2019/11/Podar-International-School-top-image1-1024x507.jpg", alt: "Students in a library", hint: "students library" },
   { src: "https://tse1.mm.bing.net/th/id/OIP.UWkJ0WGC502MQo_CCIUWuAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Students working on computers", hint: "students computers" },
   { src: "https://tse3.mm.bing.net/th/id/OIP.Xe0lW3NO8DVyIFwIFlrdGQHaE8?w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Teacher helping student with work", hint: "teacher helping" },
-  { src: "https://www.kidwise.in/wp-content/uploads/2023/01/iStock-1351416161.jpg", alt: "Happy students collaborating in class", hint: "students collaborating" },
+  { src: "https://www.educationworld.in/wp-content/uploads/2022/01/NMS-8-scaled.jpg", alt: "Happy students collaborating in class", hint: "students collaborating" },
   { src: "https://www.dais.edu.in/img/slider/img9.jpg", alt: "School auditorium with students", hint: "school auditorium" },
   { src: "https://www.aksuniversity.ac.in/sites/default/files/2024-04/libarary.jpg", alt: "University library with students", hint: "university library" },
 ];
