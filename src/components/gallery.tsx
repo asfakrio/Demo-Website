@@ -7,7 +7,7 @@ const galleryImages = [
   { src: "https://tse3.mm.bing.net/th/id/OIP.Xe0lW3NO8DVyIFwIFlrdGQHaE8?w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Teacher helping student with work", hint: "teacher helping" },
   { src: "https://www.kidwise.in/wp-content/uploads/2023/01/iStock-1351416161.jpg", alt: "Happy students collaborating in class", hint: "students collaborating" },
   { src: "https://www.dais.edu.in/img/slider/img9.jpg", alt: "School auditorium with students", hint: "school auditorium" },
-  { src: "https://placehold.co/600x400.png", alt: "Close-up of a physics experiment setup", hint: "physics experiment" },
+  { src: "https://www.aksuniversity.ac.in/sites/default/files/2024-04/libarary.jpg", alt: "University library with students", hint: "university library" },
 ];
 
 const Gallery = () => {
