@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
   return (
     <AnimatedSection id="why-us" className="bg-card">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold font-headline text-center text-accent mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12 bg-gradient-to-r from-sky-700 to-pink-400 bg-clip-text text-transparent">
           Why Choose Bright Future?
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
