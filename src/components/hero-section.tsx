@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center text-white">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="https://wallpaperaccess.com/full/2245179.jpg"
         alt="A bright and modern classroom with students"
         fill
         className="absolute inset-0 z-0 object-cover"
