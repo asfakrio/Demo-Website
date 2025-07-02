@@ -20,7 +20,7 @@ const AboutSection = () => {
           </div>
           <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-2xl">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="https://www.olevelmaster.com.sg/wp-content/uploads/2023/01/DSC_0822-1024x683.jpg"
               alt="Teacher explaining a concept to students"
               fill
               data-ai-hint="teacher explaining"

@@ -22,6 +22,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.olevelmaster.com.sg',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   devIndicators: false,
