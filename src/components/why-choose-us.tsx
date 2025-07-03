@@ -34,12 +34,12 @@ const WhyChooseUs = () => {
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="text-center p-6 bg-gradient-to-br from-gray-800 to-gray-500 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
-              <div className="inline-block p-4 bg-accent/20 rounded-full mb-4">
+            <div key={index} className="text-center p-6 bg-amber-50 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+              <div className="inline-block p-4 bg-accent/10 rounded-full mb-4">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold font-headline mb-2 text-white">{feature.title}</h3>
-              <p className="text-gray-300">{feature.description}</p>
+              <h3 className="text-xl font-bold font-headline mb-2 text-gray-800">{feature.title}</h3>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
         </div>
