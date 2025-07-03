@@ -4,32 +4,32 @@ import { AnimatedSection } from './animated-section';
 
 const courses = [
   {
-    icon: <Calculator className="w-10 h-10 text-foreground" />,
+    icon: <Calculator className="w-10 h-10 text-white" />,
     title: 'Mathematics',
     description: 'Covering everything from algebra to calculus with a focus on problem-solving skills.',
   },
   {
-    icon: <FlaskConical className="w-10 h-10 text-foreground" />,
+    icon: <FlaskConical className="w-10 h-10 text-white" />,
     title: 'Science',
     description: 'Integrated science curriculum for junior classes, building a strong foundation.',
   },
   {
-    icon: <BookOpenText className="w-10 h-10 text-foreground" />,
+    icon: <BookOpenText className="w-10 h-10 text-white" />,
     title: 'English',
     description: 'Enhancing grammar, literature comprehension, and creative writing skills.',
   },
   {
-    icon: <Atom className="w-10 h-10 text-foreground" />,
+    icon: <Atom className="w-10 h-10 text-white" />,
     title: 'Physics',
     description: 'In-depth study of mechanics, electricity, and modern physics concepts.',
   },
   {
-    icon: <TestTube2 className="w-10 h-10 text-foreground" />,
+    icon: <TestTube2 className="w-10 h-10 text-white" />,
     title: 'Chemistry',
     description: 'Exploring organic, inorganic, and physical chemistry with practical applications.',
   },
   {
-    icon: <Target className="w-10 h-10 text-foreground" />,
+    icon: <Target className="w-10 h-10 text-white" />,
     title: 'JEE & NEET',
     description: 'Specialized, intensive coaching for top engineering and medical entrance exams.',
   },
@@ -44,15 +44,15 @@ const CoursesSection = () => {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course, index) => (
-            <Card key={index} className="flex flex-col text-center items-center transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hover:shadow-2xl">
+            <Card key={index} className="flex flex-col text-center items-center transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hover:shadow-2xl bg-gradient-to-br from-gray-800 to-gray-500 text-white border-none">
               <CardHeader className="items-center">
-                <div className="p-4 bg-secondary rounded-full">
+                <div className="p-4 bg-white/20 rounded-full">
                   {course.icon}
                 </div>
                 <CardTitle className="font-headline pt-4">{course.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{course.description}</p>
+                <p className="text-gray-300">{course.description}</p>
               </CardContent>
             </Card>
           ))}
