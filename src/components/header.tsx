@@ -33,7 +33,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="#" className="flex items-center gap-2">
-            <GraduationCap className="h-8 w-8 text-primary" />
+            <GraduationCap className="h-8 w-8" />
             <span className="text-xl font-bold font-headline">Bright Future</span>
           </Link>
           
@@ -47,9 +47,10 @@ const Header = () => {
 
           <div className="hidden md:block">
             <Button asChild variant={isScrolled ? "secondary" : "ghost"} className={cn(
+                "font-bold",
                 isScrolled 
-                    ? "bg-gradient-to-r from-neutral-800 to-white text-black font-bold" 
-                    : "text-primary-foreground hover:bg-white/10 hover:text-primary-foreground"
+                    ? "bg-gradient-to-r from-neutral-800 to-white text-black" 
+                    : "text-primary-foreground bg-transparent hover:bg-transparent border-none"
             )}>
               <Link href="#contact">Contact Us</Link>
             </Button>
@@ -67,7 +68,7 @@ const Header = () => {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between p-4 border-b">
                      <Link href="#" className="flex items-center gap-2">
-                        <GraduationCap className="h-8 w-8 text-primary" />
+                        <GraduationCap className="h-8 w-8" />
                         <SheetTitle asChild>
                           <span className="text-xl font-bold font-headline">Bright Future</span>
                         </SheetTitle>
