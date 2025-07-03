@@ -77,7 +77,7 @@ const Testimonials = () => {
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
-                  <Card className="h-full flex flex-col justify-between shadow-lg">
+                  <Card className="h-full flex flex-col justify-between shadow-lg bg-gray-50">
                     <CardContent className="p-6 text-center flex-grow">
                       <Quote className="w-8 h-8 text-primary/30 mx-auto mb-4" />
                       <p className="text-muted-foreground italic mb-6">
@@ -92,13 +92,13 @@ const Testimonials = () => {
                         ))}
                       </div>
                     </CardContent>
-                    <div className="bg-background p-4 flex flex-col items-center">
+                    <div className="bg-black p-4 flex flex-col items-center">
                       <Avatar className="mb-2">
                         <AvatarImage src={testimonial.image} data-ai-hint={testimonial.aiHint} />
                         <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                       </Avatar>
-                      <p className="font-semibold font-headline">{testimonial.name}</p>
-                      <p className="text-xs text-muted-foreground">{testimonial.role}</p>
+                      <p className="font-semibold font-headline text-white">{testimonial.name}</p>
+                      <p className="text-xs text-gray-400">{testimonial.role}</p>
                     </div>
                   </Card>
                 </div>
