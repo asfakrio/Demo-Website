@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <ScrollReveal key={index}>
-              <div className="text-center p-6 bg-yellow-50 rounded-2xl shadow-md transform hover:scale-105 transition-transform duration-300 h-full">
+              <div className="text-center p-6 bg-slate-50 rounded-2xl shadow-md transform hover:scale-105 transition-transform duration-300 h-full">
                 <div className="inline-block p-4 bg-primary/10 rounded-full mb-4">
                   {feature.icon}
                 </div>
