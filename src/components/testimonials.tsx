@@ -1,5 +1,8 @@
 "use client"
 
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay"
+
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
@@ -52,6 +55,10 @@ const testimonials = [
 ]
 
 const Testimonials = () => {
+  const plugin = React.useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true })
+  )
+
   return (
     <AnimatedSection id="testimonials">
       <div className="container mx-auto px-4">
@@ -59,6 +66,7 @@ const Testimonials = () => {
           What Our Students & Parents Say
         </h2>
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: "start",
             loop: true,
