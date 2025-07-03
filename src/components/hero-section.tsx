@@ -22,7 +22,7 @@ const HeroSection = () => {
           Personalized Coaching for Class 6–12, JEE, NEET & more.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="bg-black text-white hover:bg-gray-800">
             <Link href="#courses">Explore Courses</Link>
           </Button>
           <Button size="lg" variant="secondary" asChild>
