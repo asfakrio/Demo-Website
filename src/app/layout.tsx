@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: 'Bright Future Academy - Interactive Learning Platform',
   description: 'Unlock Your Academic Potential with Personalized Coaching for Class 6–12, JEE, NEET & more.',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
