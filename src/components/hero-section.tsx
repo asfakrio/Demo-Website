@@ -6,12 +6,11 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center text-white">
       <Image
-        src="https://wallpaperaccess.com/full/2245179.jpg"
+        src="/gallery/hero.jpg"
         alt="A bright and modern classroom with students"
         fill
         className="absolute inset-0 z-0 object-cover"
         priority
-        data-ai-hint="classroom students"
       />
       <div className="absolute inset-0 bg-black/50 z-10" />
       <div className="relative z-20 text-center px-4 animate-fade-in-up">

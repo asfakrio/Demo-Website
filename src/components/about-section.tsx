@@ -20,10 +20,9 @@ const AboutSection = () => {
           <ScrollReveal direction="right">
             <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-2xl shadow-accent/30">
               <Image
-                src="https://www.olevelmaster.com.sg/wp-content/uploads/2023/01/DSC_0822-1024x683.jpg"
+                src="/gallery/about.jpg"
                 alt="Teacher explaining a concept to students"
                 fill
-                data-ai-hint="teacher explaining"
                 className="object-cover transform hover:scale-105 transition-transform duration-500"
               />
             </div>

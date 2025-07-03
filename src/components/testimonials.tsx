@@ -20,8 +20,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Parent of Class 10 Student",
     avatar: "PS",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "indian woman",
+    image: "/gallery/avatar-1.png",
     quote: "The personalized attention my son received at Bright Future Academy was exceptional. His grades in Physics improved dramatically within months. Highly recommended!",
     rating: 5,
   },
@@ -29,8 +28,7 @@ const testimonials = [
     name: "Rohan Verma",
     role: "JEE Aspirant",
     avatar: "RV",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "indian man",
+    image: "/gallery/avatar-2.png",
     quote: "The doubt-clearing sessions and regular mock tests were a game-changer for my JEE preparation. The faculty is incredibly supportive and knowledgeable.",
     rating: 5,
   },
@@ -38,8 +36,7 @@ const testimonials = [
     name: "Anjali Mehta",
     role: "NEET Aspirant",
     avatar: "AM",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "indian woman",
+    image: "/gallery/avatar-3.png",
     quote: "I finally understood complex chemistry concepts thanks to the teaching methods here. The small batch size ensures every student gets the focus they need.",
     rating: 5,
   },
@@ -47,8 +44,7 @@ const testimonials = [
     name: "Sunil Kumar",
     role: "Parent of Class 8 Student",
     avatar: "SK",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "indian man",
+    image: "/gallery/avatar-4.png",
     quote: "A fantastic place for building a strong foundation. My daughter enjoys her math classes and is no longer afraid of the subject. Thank you, Bright Future!",
     rating: 4,
   },
@@ -94,7 +90,7 @@ const Testimonials = () => {
                     </CardContent>
                     <div className="bg-black p-4 flex flex-col items-center">
                       <Avatar className="mb-2">
-                        <AvatarImage src={testimonial.image} data-ai-hint={testimonial.aiHint} />
+                        <AvatarImage src={testimonial.image} />
                         <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                       </Avatar>
                       <p className="font-semibold font-headline text-white">{testimonial.name}</p>

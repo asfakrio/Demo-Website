@@ -3,14 +3,14 @@ import { AnimatedSection } from './animated-section';
 import { ScrollReveal } from './scroll-reveal';
 
 const galleryImages = [
-  { src: "https://wallpaperaccess.com/full/2245179.jpg", alt: "A bright and modern classroom with students", hint: "classroom students"},
-  { src: "https://www.olevelmaster.com.sg/wp-content/uploads/2023/01/DSC_0822-1024x683.jpg", alt: "Teacher explaining a concept to students", hint: "teacher explaining"},
-  { src: "https://podarinternationalschool.com/wp-content/uploads/2019/11/Podar-International-School-top-image1-1024x507.jpg", alt: "Students in a library", hint: "students library" },
-  { src: "https://tse1.mm.bing.net/th/id/OIP.UWkJ0WGC502MQo_CCIUWuAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Students working on computers", hint: "students computers" },
-  { src: "https://tse3.mm.bing.net/th/id/OIP.Xe0lW3NO8DVyIFwIFlrdGQHaE8?w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Teacher helping student with work", hint: "teacher helping" },
-  { src: "https://www.educationworld.in/wp-content/uploads/2022/01/NMS-8-scaled.jpg", alt: "Happy students collaborating in class", hint: "students collaborating" },
-  { src: "https://www.dais.edu.in/img/slider/img9.jpg", alt: "School auditorium with students", hint: "school auditorium" },
-  { src: "https://www.aksuniversity.ac.in/sites/default/files/2024-04/libarary.jpg", alt: "University library with students", hint: "university library" },
+  { src: "/gallery/gallery-1.jpg", alt: "A bright and modern classroom with students" },
+  { src: "/gallery/gallery-2.jpg", alt: "Teacher explaining a concept to students" },
+  { src: "/gallery/gallery-3.jpg", alt: "Students in a library" },
+  { src: "/gallery/gallery-4.jpg", alt: "Students working on computers" },
+  { src: "/gallery/gallery-5.jpg", alt: "Teacher helping student with work" },
+  { src: "/gallery/gallery-6.jpg", alt: "Happy students collaborating in class" },
+  { src: "/gallery/gallery-7.jpg", alt: "School auditorium with students" },
+  { src: "/gallery/gallery-8.jpg", alt: "University library with students" },
 ];
 
 const Gallery = () => {
@@ -28,7 +28,6 @@ const Gallery = () => {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  data-ai-hint={image.hint}
                   className="object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
