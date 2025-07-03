@@ -46,7 +46,11 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:block">
-            <Button asChild variant={isScrolled ? "secondary" : "outline"} className={cn(isScrolled && "bg-gradient-to-r from-neutral-800 to-white text-black font-bold")}>
+            <Button asChild variant={isScrolled ? "secondary" : "outline"} className={cn(
+                isScrolled 
+                    ? "bg-gradient-to-r from-neutral-800 to-white text-black font-bold" 
+                    : "border-primary-foreground text-primary-foreground hover:bg-white/10"
+            )}>
               <Link href="#contact">Contact Us</Link>
             </Button>
           </div>
