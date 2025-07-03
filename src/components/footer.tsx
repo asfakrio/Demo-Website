@@ -3,23 +3,23 @@ import { Facebook, Instagram, Twitter, GraduationCap } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t">
+    <footer className="bg-black border-t border-gray-800 text-gray-300">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <GraduationCap className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold font-headline">Bright Future Academy</span>
+            <span className="text-xl font-bold font-headline text-white">Bright Future Academy</span>
           </div>
           <div className="flex space-x-4 mb-4 md:mb-0">
-             <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors">About</Link>
-             <Link href="#courses" className="text-muted-foreground hover:text-primary transition-colors">Courses</Link>
-             <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</Link>
+             <Link href="#about" className="text-gray-400 hover:text-primary transition-colors">About</Link>
+             <Link href="#courses" className="text-gray-400 hover:text-primary transition-colors">Courses</Link>
+             <Link href="#contact" className="text-gray-400 hover:text-primary transition-colors">Contact</Link>
           </div>
           <div className="flex space-x-4">
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors"><Twitter /></Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors"><Facebook /></Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors"><Instagram /></Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="#" className="text-gray-400 hover:text-primary transition-colors"><Twitter /></Link>
+            <Link href="#" className="text-gray-400 hover:text-primary transition-colors"><Facebook /></Link>
+            <Link href="#" className="text-gray-400 hover:text-primary transition-colors"><Instagram /></Link>
+            <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="text-center text-muted-foreground mt-8 pt-8 border-t">
+        <div className="text-center text-gray-500 mt-8 pt-8 border-t border-gray-800">
           <p>&copy; {new Date().getFullYear()} Bright Future Academy. All Rights Reserved.</p>
         </div>
       </div>
