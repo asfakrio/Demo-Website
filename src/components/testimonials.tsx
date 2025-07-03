@@ -56,7 +56,7 @@ const testimonials = [
 
 const Testimonials = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true })
+    Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: false })
   )
 
   return (
