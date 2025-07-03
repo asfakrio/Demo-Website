@@ -3,6 +3,8 @@ import { AnimatedSection } from './animated-section';
 import { ScrollReveal } from './scroll-reveal';
 
 const galleryImages = [
+  { src: "https://wallpaperaccess.com/full/2245179.jpg", alt: "A bright and modern classroom with students", hint: "classroom students"},
+  { src: "https://www.olevelmaster.com.sg/wp-content/uploads/2023/01/DSC_0822-1024x683.jpg", alt: "Teacher explaining a concept to students", hint: "teacher explaining"},
   { src: "https://podarinternationalschool.com/wp-content/uploads/2019/11/Podar-International-School-top-image1-1024x507.jpg", alt: "Students in a library", hint: "students library" },
   { src: "https://tse1.mm.bing.net/th/id/OIP.UWkJ0WGC502MQo_CCIUWuAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Students working on computers", hint: "students computers" },
   { src: "https://tse3.mm.bing.net/th/id/OIP.Xe0lW3NO8DVyIFwIFlrdGQHaE8?w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3", alt: "Teacher helping student with work", hint: "teacher helping" },
@@ -18,9 +20,9 @@ const Gallery = () => {
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12 bg-gradient-to-r from-blue-800 to-red-400 bg-clip-text text-transparent">
           A Glimpse into Our Academy
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {galleryImages.map((image, index) => (
-            <ScrollReveal key={index} direction={index < 3 ? 'right' : 'left'}>
+            <ScrollReveal key={index} direction={index < 4 ? 'right' : 'left'}>
               <div className="relative aspect-video rounded-lg overflow-hidden group shadow-lg">
                 <Image
                   src={image.src}
