@@ -1,13 +1,12 @@
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
-import { AnimatedSection } from './animated-section';
+import { ScrollReveal } from './scroll-reveal';
 
 const AboutSection = () => {
   return (
-    <AnimatedSection id="about" className="bg-card">
+    <section id="about" className="bg-card py-16 md:py-24 overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <ScrollReveal direction="left" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold font-headline text-accent">
               About Bright Future Academy
             </h2>
@@ -17,19 +16,21 @@ const AboutSection = () => {
             <p className="text-muted-foreground leading-relaxed">
               We believe in a personalized approach to teaching. Our experienced educators utilize modern teaching methodologies, focusing on conceptual clarity and application-based learning. We aim to build a strong foundation for our students, preparing them not just for exams, but for a lifetime of learning and success.
             </p>
-          </div>
-          <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-2xl">
-            <Image
-              src="https://www.olevelmaster.com.sg/wp-content/uploads/2023/01/DSC_0822-1024x683.jpg"
-              alt="Teacher explaining a concept to students"
-              fill
-              data-ai-hint="teacher explaining"
-              className="object-cover transform hover:scale-105 transition-transform duration-500"
-            />
-          </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right">
+            <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-2xl shadow-accent/30">
+              <Image
+                src="https://www.olevelmaster.com.sg/wp-content/uploads/2023/01/DSC_0822-1024x683.jpg"
+                alt="Teacher explaining a concept to students"
+                fill
+                data-ai-hint="teacher explaining"
+                className="object-cover transform hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </div>
-    </AnimatedSection>
+    </section>
   );
 };
 
