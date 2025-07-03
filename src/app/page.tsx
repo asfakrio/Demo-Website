@@ -10,7 +10,7 @@ import Footer from '@/components/footer';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground">
+    <div className="flex flex-col min-h-screen text-foreground bg-gradient-to-br from-neutral-800 via-neutral-300 to-white">
       <Header />
       <main className="flex-1">
         <HeroSection />
