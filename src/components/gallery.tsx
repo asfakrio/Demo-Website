@@ -9,6 +9,8 @@ const galleryImages = [
   { src: "https://www.educationworld.in/wp-content/uploads/2022/01/NMS-8-scaled.jpg", alt: "Happy students collaborating in class", hint: "students collaborating" },
   { src: "https://www.dais.edu.in/img/slider/img9.jpg", alt: "School auditorium with students", hint: "school auditorium" },
   { src: "https://www.aksuniversity.ac.in/sites/default/files/2024-04/libarary.jpg", alt: "University library with students", hint: "university library" },
+  { src: "https://isbaindore.in/wp-content/uploads/2021/11/IMG_7718-scaled.jpg", alt: "Students in classroom", hint: "students classroom" },
+  { src: "https://athrav.in/wp-content/uploads/2023/11/CBSE-Schools-in-Jaipur-scaled.jpg", alt: "School building", hint: "school building" }
 ];
 
 const Gallery = () => {
@@ -18,9 +20,9 @@ const Gallery = () => {
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12 bg-gradient-to-r from-blue-800 to-red-400 bg-clip-text text-transparent">
           A Glimpse into Our Academy
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {galleryImages.map((image, index) => (
-            <ScrollReveal key={index} direction={index < 3 ? 'right' : 'left'}>
+            <ScrollReveal key={index} direction={index < 4 ? 'right' : 'left'}>
               <div className="relative aspect-video rounded-lg overflow-hidden group shadow-lg">
                 <Image
                   src={image.src}
