@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { AnimatedSection } from './animated-section';
+import { ScrollReveal } from './scroll-reveal';
 
 const galleryImages = [
   { src: "https://podarinternationalschool.com/wp-content/uploads/2019/11/Podar-International-School-top-image1-1024x507.jpg", alt: "Students in a library", hint: "students library" },
@@ -19,16 +20,18 @@ const Gallery = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
-            <div key={index} className="relative aspect-video rounded-lg overflow-hidden group shadow-lg">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                data-ai-hint={image.hint}
-                className="object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
-            </div>
+            <ScrollReveal key={index} direction={index < 3 ? 'right' : 'left'}>
+              <div className="relative aspect-video rounded-lg overflow-hidden group shadow-lg">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  data-ai-hint={image.hint}
+                  className="object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
