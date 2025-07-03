@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { GraduationCap, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -33,7 +34,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="#" className="flex items-center gap-2">
-            <GraduationCap className="h-8 w-8" />
+            <Image src="/logo.png" alt="Bright Future Academy Logo" width={32} height={32} />
             <span className="text-xl font-bold font-headline">Bright Future</span>
           </Link>
           
@@ -48,9 +49,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button asChild variant={isScrolled ? "secondary" : "ghost"} className={cn(
                 "font-bold",
-                isScrolled 
-                    ? "bg-gradient-to-r from-neutral-800 to-white text-black" 
-                    : "text-primary-foreground bg-transparent hover:bg-transparent border-none"
+                !isScrolled && "bg-transparent hover:bg-transparent text-primary-foreground border-none"
             )}>
               <Link href="#contact">Contact Us</Link>
             </Button>
@@ -68,7 +67,7 @@ const Header = () => {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between p-4 border-b">
                      <Link href="#" className="flex items-center gap-2">
-                        <GraduationCap className="h-8 w-8" />
+                        <Image src="/logo.png" alt="Bright Future Academy Logo" width={32} height={32} />
                         <SheetTitle asChild>
                           <span className="text-xl font-bold font-headline">Bright Future</span>
                         </SheetTitle>

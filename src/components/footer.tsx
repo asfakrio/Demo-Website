@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, GraduationCap } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <GraduationCap className="h-8 w-8 text-white" />
+            <Image src="/logo.png" alt="Bright Future Academy Logo" width={32} height={32} className="invert" />
             <span className="text-xl font-bold font-headline text-white">Bright Future Academy</span>
           </div>
           <div className="flex space-x-4 mb-4 md:mb-0">
