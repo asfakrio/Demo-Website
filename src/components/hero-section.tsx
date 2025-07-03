@@ -6,8 +6,9 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center text-white">
       <Image
-        src="/gallery/hero.jpg"
+        src="/gallery/photo1.jpg"
         alt="A bright and modern classroom with students"
+        data-ai-hint="modern classroom"
         fill
         className="absolute inset-0 z-0 object-cover"
         priority

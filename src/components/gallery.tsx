@@ -3,14 +3,14 @@ import { AnimatedSection } from './animated-section';
 import { ScrollReveal } from './scroll-reveal';
 
 const galleryImages = [
-  { src: "/gallery/gallery-1.jpg", alt: "A bright and modern classroom with students" },
-  { src: "/gallery/gallery-2.jpg", alt: "Teacher explaining a concept to students" },
-  { src: "/gallery/gallery-3.jpg", alt: "Students in a library" },
-  { src: "/gallery/gallery-4.jpg", alt: "Students working on computers" },
-  { src: "/gallery/gallery-5.jpg", alt: "Teacher helping student with work" },
-  { src: "/gallery/gallery-6.jpg", alt: "Happy students collaborating in class" },
-  { src: "/gallery/gallery-7.jpg", alt: "School auditorium with students" },
-  { src: "/gallery/gallery-8.jpg", alt: "University library with students" },
+  { src: "/gallery/photo3.jpg", alt: "A bright and modern classroom with students", "data-ai-hint": "modern classroom" },
+  { src: "/gallery/photo4.jpg", alt: "Teacher explaining a concept to students", "data-ai-hint": "teacher students" },
+  { src: "/gallery/photo5.jpg", alt: "Students in a library", "data-ai-hint": "students library" },
+  { src: "/gallery/photo6.jpg", alt: "Students working on computers", "data-ai-hint": "students computers" },
+  { src: "/gallery/photo7.jpg", alt: "Teacher helping student with work", "data-ai-hint": "teacher student" },
+  { src: "/gallery/photo8.jpg", alt: "Happy students collaborating in class", "data-ai-hint": "happy students" },
+  { src: "/gallery/photo9.jpg", alt: "School auditorium with students", "data-ai-hint": "school auditorium" },
+  { src: "/gallery/photo10.jpg", alt: "University library with students", "data-ai-hint": "university library" },
 ];
 
 const Gallery = () => {
@@ -27,6 +27,7 @@ const Gallery = () => {
                 <Image
                   src={image.src}
                   alt={image.alt}
+                  data-ai-hint={image['data-ai-hint']}
                   fill
                   className="object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
                 />

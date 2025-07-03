@@ -20,8 +20,9 @@ const AboutSection = () => {
           <ScrollReveal direction="right">
             <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-2xl shadow-accent/30">
               <Image
-                src="/gallery/about.jpg"
+                src="/gallery/photo2.jpg"
                 alt="Teacher explaining a concept to students"
+                data-ai-hint="teacher students"
                 fill
                 className="object-cover transform hover:scale-105 transition-transform duration-500"
               />
