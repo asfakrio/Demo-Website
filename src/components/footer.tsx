@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center text-gray-500 mt-8 pt-8 border-t border-gray-800">
-          <p>&copy; {new Date().getFullYear()} Bright Future Academy. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Bright Future Academy. MADE BY STOVA MEDIA AGENCY.</p>
         </div>
       </div>
     </footer>
